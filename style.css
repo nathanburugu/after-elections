@@ -1,0 +1,43 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(211, 226, 182);
+    padding: 10px;
+    gap: 10px;
+    grid:
+    "one one one one one one" 1fr
+    "two two two two two two" 1fr
+    "three three four four four four" 3fr
+    "five five five five five five" 1fr
+    / 1fr 1fr 1fr 1fr 1fr 1fr
+
+    ;
+}
+.one {
+    background-color: aqua;
+    grid-area: one;
+}
+.two {
+ background-color: rgb(218, 218, 80);
+ grid-area: two;
+
+}
+.three {
+    background-color: aqua;
+    grid-area: three;
+}
+.four {
+ background-color: rgb(216, 216, 39);
+ grid-area: four;
+}
+.five {
+    background-color: rgb(117, 73, 6);
+    grid-area: five;
+}
